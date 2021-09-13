@@ -36,13 +36,8 @@
 
     - name: start tomcat server
        shell:
-        cmd: "{{item}}"
-        with_items: 
-           -  cd  /home/ansible/tomcat/apache-tomcat-10.1.0-M4/bin/
-           -  ./startup.sh
-        responses:
-             Question:
-                      - ''
+        cmd: /home/ansible/tomcat/apache-tomcat-10.1.0-M4/bin/startup.sh
+       
               
 
 
